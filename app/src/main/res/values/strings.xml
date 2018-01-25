@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LevelCounter</string>
+    <string name="level">Level:</string>
+    <string name="gear">Gear:</string>
+    <string name="strength">Strength:</string>
+    <string name="battle">BATTLE</string>
+    <string name="ask_exit">Are you sure you want to remove this player?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

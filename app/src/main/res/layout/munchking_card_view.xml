@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardElevation="0dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/transparent"
+            >
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgBtnSex"
+                android:src="@drawable/male"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Unknow"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/tvName"
+                android:textColor="@color/black"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgBtnSettings"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgPlayer"
+                android:src="@drawable/player_unknown"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/level"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="40dp"
+                        android:text="-"
+                        android:id="@+id/btnMinusLevel"
+                        />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:id="@+id/tvLevel"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="+"
+                        android:id="@+id/btnPlusLevel"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gear"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_marginLeft="80dp"
+                        android:id="@+id/btnMinusGear"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="-"
+
+                        />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tvGear"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="+"
+                        android:id="@+id/btnPlusGear"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strength"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:id="@+id/tvTotal"
+                        android:textAlignment="center"
+                        android:text="1"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/battle"
+            android:id="@+id/btnBattle"/>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
